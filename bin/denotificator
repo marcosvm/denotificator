@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require 'denotificator'
+
+Denotificator::Runtime.run!
