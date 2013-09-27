@@ -11,17 +11,18 @@ module Denotificator
     end
 
     def get_http_response uri
-      connection.get uri do |request|
-        request.headers['User-Agent'] = user_agent
-        request.headers['Authorization'] = "token #{auth_token}"
-      end
+      connection.get uri, &headers
     end
 
     def put_http_response uri, payload
-      connection.put uri do |request|
+      connection.put uri, &headers
+    end
+
+    def headers
+      -> request {
         request.headers['User-Agent'] = user_agent
         request.headers['Authorization'] = "token #{auth_token}"
-      end
+      }
     end
   end
 end
