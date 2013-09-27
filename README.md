@@ -7,7 +7,7 @@ It uses the [GitHub Notifications API](http://developer.github.com/v3/activity/n
 You can create your GitHub authentication token following [this](https://help.github.com/articles/creating-an-access-token-for-command-line-use) instructions.
 
 [![Build Status](https://travis-ci.org/marcosvm/denotificator.png)](https://travis-ci.org/marcosvm/denotificator)
-
+[![Code Climate](https://codeclimate.com/github/marcosvm/denotificator.png)](https://codeclimate.com/github/marcosvm/denotificator)
 ## Installation
 
 Or install it yourself as:
