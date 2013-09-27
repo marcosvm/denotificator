@@ -17,7 +17,13 @@ Or install it yourself as:
 ## Usage
 
 ```shell
-GITHUB_AUTH_TOKEN=your_token_here denotificator
+AUTH_TOKEN=your_token_here denotificator
+```
+
+To enable New Relic support add the environment variable NEWRELIC_LICENSE_KEY:
+
+```shell
+AUTH_TOKEN=your_token_here NEWRELIC_LICENSE_KEY=new_relic_key denotificator
 ```
 
 You can run it manually or add it to a cronjob for it.
