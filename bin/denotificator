@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+if ENV['AUTH_TOKEN'].nil?
+  STDERR.puts "You must define the AUTH_TOKEN environment variable with your GitHub generated token"
+  exit -1
+end
+
 require 'denotificator'
 
 Denotificator::Runtime.run!
