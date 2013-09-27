@@ -16,3 +16,5 @@ module Denotificator
 end
 
 Denotificator.auth_token = ENV['AUTH_TOKEN']
+
+require 'denotificator/newrelic' if ENV['NEWRELIC_LICENSE_KEY']
